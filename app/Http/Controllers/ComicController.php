@@ -15,7 +15,7 @@ class ComicController extends Controller
      */
     public function index()
     {
-        function index() {
+        
             $links = config('menu');
             $bannerItems = config('bannerItems');
             $DCcomicsLinks = config('DCcomicsLinks');
@@ -34,7 +34,7 @@ class ComicController extends Controller
                 'sites' => $sites
             ]);
         
-        }
+        
     }
 
     /**
