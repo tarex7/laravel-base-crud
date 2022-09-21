@@ -66,7 +66,28 @@ class ComicController extends Controller
      */
     public function show($id)
     {
-        //
+        $links = config('menu');
+        $bannerItems = config('bannerItems');
+        $DCcomicsLinks = config('DCcomicsLinks');
+        $DClinks = config('DClinks');
+        $sites = config('sites');
+
+
+        $comic = Comic::findOrFail($id);
+        
+    
+        return view('comics.show', 
+        [
+            'links' => $links,
+            //'comics' => $comics,
+            'bannerItems' => $bannerItems,
+            'DCcomicsLinks' => $DCcomicsLinks ,
+            'DClinks' => $DClinks,
+            'sites' => $sites,
+            'comic' => $comic,
+            
+        ]);
+    
     }
 
     /**
