@@ -1,0 +1,361 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.debug {
+  border: 1px red solid;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.bg-dark {
+  background-color: #1c1c1c;
+}
+
+.bg-light {
+  background-color: #fff;
+}
+
+.bg-gray {
+  background-color: #eee;
+}
+
+.mr-3 {
+  margin-right: 60px;
+}
+
+.text-primary {
+  color: #0282f9;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.border {
+  border: 1px solid #777;
+}
+
+header {
+  height: 120px;
+  display: flex;
+  padding: 20px 0;
+}
+header .active {
+  color: #0282f9;
+  border-bottom: 8px solid #0282f9;
+}
+header a:hover {
+  color: #0282f9;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+header #logo {
+  width: 90px;
+}
+header ul {
+  line-height: 70px;
+  height: 100%;
+}
+header li {
+  height: 120px;
+  line-height: 120px;
+}
+header li a {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 10px;
+  height: 100%;
+}
+
+main {
+  padding: 70px;
+  color: #fff;
+}
+main .comics {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .comics .card {
+  width: 16.6666666667%;
+  margin-bottom: 50px;
+}
+main .comics .card:hover {
+  color: #0282f9;
+}
+main .comics .card:hover figure {
+  border: 3px solid #0282f9;
+}
+main .comics figure {
+  max-height: 186px;
+  max-width: 186px;
+  overflow: hidden;
+  margin: 0px;
+  border: 3px solid transparent;
+}
+main .comics figcaption {
+  text-transform: uppercase;
+  margin-top: 20px;
+  width: 90%;
+}
+
+.banner {
+  background-color: #0282f9;
+  padding: 40px;
+}
+.banner .banner-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.banner img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.banner .media-text {
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+.banner a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+.banner a:hover {
+  transform: scale(1.1);
+}
+.banner #dc-power {
+  width: 30%;
+  margin-right: 5px;
+}
+.banner .media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+}
+
+.jumbotron {
+  background-image: url("../images/jumbotron.jpg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  background-image: url("../images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  padding: 40px;
+}
+footer .row {
+  display: flex;
+}
+footer .row .col {
+  margin: 0 20px;
+}
+footer .row a:hover {
+  color: #fff;
+}
+footer h3 {
+  text-transform: uppercase;
+}
+footer #logo {
+  position: absolute;
+  top: -11%;
+  left: 53%;
+  width: 650px;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+footer ul li a {
+  color: gray;
+  justify-self: start;
+  margin: 5px 0;
+}
+
+#footer-bottom {
+  background-color: #303030;
+  padding: 50px;
+}
+#footer-bottom .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer-bottom .footer-content .social {
+  display: flex;
+  align-items: center;
+}
+#footer-bottom .footer-content .social h3 {
+  color: #0282f9;
+  margin-right: 10px;
+}
+#footer-bottom .footer-content .social img {
+  margin: 0 10px;
+  transition: all 0.2s;
+}
+#footer-bottom .footer-content .social img:hover {
+  transform: scale(1.1);
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: 15px;
+  color: #fff;
+  border: 3px solid #0282f9;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #0282f9;
+}
+
+.gallery {
+  height: 80px;
+  background-color: #0282f9;
+  position: relative;
+}
+.gallery img {
+  position: absolute;
+  bottom: 15%;
+  left: 23%;
+}
+
+.comic {
+  background-color: #fff;
+  padding: 70px 400px;
+}
+.comic .comic-details .top {
+  display: flex;
+}
+.comic .comic-details .card {
+  color: #000;
+  padding: 10px 50px 0 0;
+}
+.comic .comic-details .card .card-info {
+  display: flex;
+  margin: 20px 0;
+}
+.comic .comic-details .card .card-info .price {
+  background-color: #55ba59;
+  padding: 20px;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+.comic .comic-details .card .card-info .availability {
+  background-color: #55ba59;
+  padding: 20px 50px;
+  font-weight: bold;
+  color: #fff;
+  width: 25%;
+  border-left: 2px solid #666;
+}
+.comic .comic-details .card .card-info span {
+  color: rgba(255, 255, 255, 0.7);
+}
+.comic .comic-details .card p {
+  line-height: 25px;
+}
+.comic .comic-details img {
+  width: 2000px;
+}
+.comic h1 {
+  color: #003f5e;
+  text-transform: uppercase;
+}
+.comic figcaption {
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: end;
+}
+
+.bottom {
+  height: 700px;
+  padding: 0 400px;
+  display: flex;
+  position: relative;
+}
+.bottom .col {
+  width: 50%;
+}
+.bottom .section {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #aaa;
+  padding: 20px 0;
+  color: #000;
+}
+.bottom .section h4 {
+  min-width: 30%;
+}
+
+.bottom-section {
+  padding: 0 400px;
+  display: flex;
+  height: 100px;
+  background-color: #ddd;
+}
+.bottom-section h5 {
+  margin-left: 20px;
+}
+.bottom-section .col {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-section .col .icons {
+  margin-top: 30px;
+  margin-right: 10px;
+  width: 36px;
+  height: 37px;
+  background: url("../images/cta-icons.png") 0px 0px;
+}

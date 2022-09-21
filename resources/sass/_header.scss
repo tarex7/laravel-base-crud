@@ -1,0 +1,40 @@
+header {
+    height: 120px;
+    display: flex;
+    padding: 20px 0;
+
+    .active {
+      color: $primary-color;
+      border-bottom: 8px solid $primary-color;}
+  
+    a:hover {
+      color: $primary-color;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;}
+    
+    #logo {
+      width: 90px;
+    }
+    
+    ul {
+      line-height: 70px;
+      height: 100%;
+    }
+    
+    li {
+      height: 120px;
+      line-height: 120px;
+      a {
+        color: #000;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 0 10px;
+        height: 100%;
+      }
+    }
+  }

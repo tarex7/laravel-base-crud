@@ -1,0 +1,42 @@
+footer {
+    background-image: url('../images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    padding: 40px;
+    .row {
+      display: flex;
+      .col {
+        margin: 0 20px;
+      }
+  
+      a:hover {
+        color: #fff;
+      }
+    }
+    h3 {
+      text-transform: uppercase;
+    }
+    #logo {
+      position: absolute;
+      top: -11%;
+      left: 53%;
+      width: 650px;
+    }
+  
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 10px 0;
+      li a {
+        color: gray;
+        justify-self: start;
+        margin: 5px 0;
+      }
+    }
+  }
+  
+  

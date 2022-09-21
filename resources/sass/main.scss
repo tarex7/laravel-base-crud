@@ -1,0 +1,77 @@
+main {
+    padding: 70px;
+    color: #fff;
+  
+    .comics {
+      .card {
+        width: calc(100% / 6);
+        margin-bottom: 50px;
+        &:hover {
+          color: $primary-color;
+        }
+  
+        &:hover figure {
+          border: 3px solid $primary-color;
+        }
+      }
+      display: flex;
+      flex-wrap: wrap;
+      figure {
+        max-height: 186px;
+        max-width: 186px;
+        overflow: hidden;
+        margin: 0px;
+        border: 3px solid transparent;
+      }
+      figcaption {
+        text-transform: uppercase;
+        margin-top: 20px;
+        width: 90%;
+      }
+    }
+  }
+      
+  .banner {
+    background-color: $primary-color;
+    padding: 40px;
+  
+    .banner-icons {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+  
+    .media-text {
+      text-transform: uppercase;
+      margin-left: 5px;
+    }
+  
+    a {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      transition: all 0.2s;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  
+    #dc-power {
+      width: 30%;
+      margin-right: 5px;
+    }
+  
+    .media {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 15px;
+    }
+  }
+  
