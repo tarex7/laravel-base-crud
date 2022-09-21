@@ -1,5 +1,7 @@
 @extends('layouts.mainLayout') 
-
+@section('bootstrap')
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+@endsection
 @section ('sub-jumbo')
 <div class="gallery"><img id="comic-img" src="{{ $comic['thumb']}}" alt=""></div> 
 @endsection
@@ -49,8 +51,8 @@
          <p >
             {{$comic['sale_date'] }}
         </p>
-        </div>
-        
+    </div>
+        <a href="{{ route('comics.index') }}" class="btn btn-primary mt-4">Torna indietro</a>
     </div>
 </div>
 

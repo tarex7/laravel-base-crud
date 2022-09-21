@@ -11,7 +11,7 @@
             <ul>
               @foreach($DCcomicsLinks as  $index => $link)
                 <li>
-                <a href=""
+                <a href="{{ route($link['route_name']) }}"
                  class="">{{ $link['text'] }}</a>
               </li>
               @endforeach

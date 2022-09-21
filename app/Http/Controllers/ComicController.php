@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Comic;
 
+
 class ComicController extends Controller
 {
     /**
@@ -44,7 +45,7 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        return view('comics.create');
     }
 
     /**
@@ -55,7 +56,15 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        $new_comic = new Comic;
+
+        $new_comic->fill($data);
+
+        $new_comic->save();
+
+        return redirect()->route('comics.show', $new_comic->id);
     }
 
     /**
@@ -64,7 +73,7 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Comic $comic)
     {
         $links = config('menu');
         $bannerItems = config('bannerItems');
@@ -73,13 +82,12 @@ class ComicController extends Controller
         $sites = config('sites');
 
 
-        $comic = Comic::findOrFail($id);
+        //$comic = Comic::findOrFail($id);
         
     
         return view('comics.show', 
         [
             'links' => $links,
-            //'comics' => $comics,
             'bannerItems' => $bannerItems,
             'DCcomicsLinks' => $DCcomicsLinks ,
             'DClinks' => $DClinks,

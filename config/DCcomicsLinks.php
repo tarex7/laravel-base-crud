@@ -3,8 +3,8 @@
 return
 [
     [
-      'text'=> "Characters",
-      'route_name'=> "home",
+      'text'=> "Create Comic",
+      'route_name'=> "comics.create",
       'current'=> false,
     ],
     [
@@ -14,7 +14,7 @@ return
     ],
     [
       'text'=> "Movies",
-      'route_name'=> "movies.index",
+      'route_name'=> "comics.index",
       'current'=> false,
     ],
     [
