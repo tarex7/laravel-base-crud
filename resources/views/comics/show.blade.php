@@ -51,8 +51,22 @@
          <p >
             {{$comic['sale_date'] }}
         </p>
-    </div>
-        <a href="{{ route('comics.index') }}" class="btn btn-primary mt-4">Torna indietro</a>
+     </div >
+
+        <div class="d-flex justify-content-between">
+
+            <a href="{{ route('comics.index') }}" class="btn btn-primary mt-4 border-0">Torna indietro</a>
+            <a href="{{ route('comics.edit', [$comic->id]) }}" class="btn btn-warning mt-4 border-0 me-4">Modifica</a>
+
+            <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+              @csrf
+              @method('DELETE')
+            <button class="btn btn-danger border-0 mt-4">Elimina</button>
+           </form>
+
+       
+        </div>
+
     </div>
 </div>
 
