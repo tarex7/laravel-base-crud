@@ -19380,6 +19380,24 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./app2 */ "./resources/js/app2.js");
+
+/***/ }),
+
+/***/ "./resources/js/app2.js":
+/*!******************************!*\
+  !*** ./resources/js/app2.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var deleteBtn = document.getElementById('deleteBtn');
+console.log(deleteBtn);
+deleteBtn.addEventListener('submit', function (e) {
+  e.preventDefault();
+  alert('clicked');
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

@@ -7,6 +7,7 @@
     <title>Document</title>
     @yield('bootstrap')
     <link rel="stylesheet" href="{{ asset('css/app.css')}}">
+    <script  defer src="{{ asset('js/app2.js')}}"></script>
 </head>
 <body>
 
@@ -27,6 +28,7 @@
 
   
 
+@yield('extra-js')
   
 </body>
 </html>
